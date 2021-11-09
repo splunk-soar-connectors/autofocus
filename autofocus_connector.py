@@ -16,22 +16,25 @@
 #
 # pylint: disable=W0614,W0212,W0201,W0703,W0401,W0403
 # Phantom imports
+import sys
+
 import phantom.app as phantom
-from phantom.base_connector import BaseConnector
+import requests
+import simplejson as json
+from bs4 import UnicodeDammit
 from phantom.action_result import ActionResult
+from phantom.base_connector import BaseConnector
 
 # Local imports
 from autofocus_consts import *
 
-from bs4 import UnicodeDammit
-import sys
-import simplejson as json
-import requests
 try:
     from urllib.parse import unquote
 except:
     from urllib import unquote
+
 import os
+
 os.sys.path.insert(0, '{}/pan-python/lib'.format(os.path.dirname(os.path.abspath(__file__))))  # noqa
 import pan.afapi  # noqa
 
