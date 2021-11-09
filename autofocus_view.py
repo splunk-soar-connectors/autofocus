@@ -28,7 +28,8 @@ def get_search_string(query_dict, indent=0):
             if ('children' not in child):
                 for x in range(indent):
                     query_str += "&nbsp;&nbsp;&nbsp;"
-                query_str += "&nbsp;&nbsp&nbsp;<b>{0}</b> <i>{1}</i> {2}<br>".format(child['field'], child['operator'], child['value'])
+                query_str += "&nbsp;&nbsp&nbsp;<b>{0}</b> <i>{1}</i> {2}<br>".format(
+                    child['field'], child['operator'], child['value'])
             else:
                 child_string = get_search_string(child, indent + 1)
                 query_str += child_string
@@ -93,13 +94,13 @@ def get_report(provides, all_app_runs, context):
 def _convert_dict_to_results(input_results):
 
     import phantom.app as phantom
-
     from phantom.action_result import ActionResult
 
     action_results = []
     for i, item in enumerate(input_results):
         r = ActionResult()
-        setattr(r, '_ActionResult__status_code', item['status'] == phantom.APP_SUCCESS_STR and phantom.APP_SUCCESS or phantom.APP_ERROR)
+        setattr(r, '_ActionResult__status_code',
+                item['status'] == phantom.APP_SUCCESS_STR and phantom.APP_SUCCESS or phantom.APP_ERROR)
         setattr(r, '_ActionResult__status_message', item['message'])
         r.get_data().extend(item['data'])
         r.set_summary(item['summary'])
@@ -111,9 +112,10 @@ def _convert_dict_to_results(input_results):
 
 
 if __name__ == '__main__':
-    import sys
-    import pudb
     import json
+    import sys
+
+    import pudb
 
     pudb.set_trace()
     with open(sys.argv[1]) as f:
