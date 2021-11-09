@@ -1,0 +1,4 @@
+beautifulsoup4==4.9.1
+certifi==2021.5.30
+requests==2.25.0
+simplejson==3.17.2
