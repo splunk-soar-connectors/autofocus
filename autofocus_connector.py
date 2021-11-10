@@ -343,4 +343,4 @@ if __name__ == '__main__':
         connector.print_progress_message = True
         r_val = connector._handle_action(json.dumps(in_json), None)
         print(r_val)
-    exit(0)
+    sys.exit(0)
