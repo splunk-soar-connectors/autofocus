@@ -683,6 +683,10 @@
                 "input_file": "wheels/idna-2.10-py2.py3-none-any.whl"
             },
             {
+                "module": "pan_python",
+                "input_file": "wheels/pan_python-0.10.0-py2-none-any.whl"
+            },
+            {
                 "module": "requests",
                 "input_file": "wheels/requests-2.25.0-py2.py3-none-any.whl"
             },
