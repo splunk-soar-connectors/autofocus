@@ -126,4 +126,4 @@ if __name__ == '__main__':
         for result in results:
             ctx_result = get_ctx_result(result)
 
-    exit(0)
+    sys.exit(0)
