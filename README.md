@@ -2,7 +2,7 @@
 # AutoFocus
 
 Publisher: Splunk Community  
-Connector Version: 1.1.6  
+Connector Version: 1.1.7  
 Product Vendor: Palo Alto Networks  
 Product Name: AutoFocus  
 Product Version Supported (regex): ".\*"  
