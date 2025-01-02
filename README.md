@@ -10,8 +10,8 @@ Minimum Product Version: 4.10.0.40961
 
 This App supports hunting actions and report retrieval on Palo Alto Networks AutoFocus
 
-### Configuration Variables
-The below configuration variables are required for this Connector to operate.  These variables are specified when configuring a AutoFocus asset in SOAR.
+### Configuration variables
+This table lists the configuration variables required to operate AutoFocus. These variables are specified when configuring a AutoFocus asset in Splunk SOAR.
 
 VARIABLE | REQUIRED | TYPE | DESCRIPTION
 -------- | -------- | ---- | -----------
